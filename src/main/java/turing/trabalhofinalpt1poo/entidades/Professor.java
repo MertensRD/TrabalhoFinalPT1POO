@@ -1,15 +1,13 @@
 package turing.trabalhofinalpt1poo.entidades;
 
-public class Professor 
-{
+public class Professor {
+
     private String nome;
     private int id;
-    int siape;
-    String uni_academica;
-    String curso;
+    private String siape; // Alterado para String
+    private String uni_academica; // Adicionado private
+    private String curso; // Adicionado private
 
-    
-    
     public String getNome() {
         return nome;
     }
@@ -26,11 +24,11 @@ public class Professor
         this.id = id;
     }
 
-    public int getSiape() {
+    public String getSiape() {
         return siape;
     }
 
-    public void setSiape(int siape) {
+    public void setSiape(String siape) {
         this.siape = siape;
     }
 
@@ -49,7 +47,4 @@ public class Professor
     public void setCurso(String curso) {
         this.curso = curso;
     }
-    
-    
-    
 }

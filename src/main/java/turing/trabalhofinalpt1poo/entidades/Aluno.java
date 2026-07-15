@@ -1,17 +1,13 @@
 package turing.trabalhofinalpt1poo.entidades;
 
+public class Aluno {
 
-public class Aluno 
-{
-    String nome;
-    int id;
-    int rga;
-    String email;
-    String curso;
+    private String nome;
+    private int id;
+    private String rga; // Alterado para String
+    private String email;
+    private String curso;
 
-    
-    
-    
     public String getNome() {
         return nome;
     }
@@ -28,11 +24,11 @@ public class Aluno
         this.id = id;
     }
 
-    public int getRga() {
+    public String getRga() {
         return rga;
     }
 
-    public void setRga(int rga) {
+    public void setRga(String rga) {
         this.rga = rga;
     }
 
@@ -51,7 +47,4 @@ public class Aluno
     public void setCurso(String curso) {
         this.curso = curso;
     }
-    
-    
-    
 }
